@@ -1,0 +1,164 @@
+html {
+  background-color: black;
+}
+
+.container {
+  margin: 0 100;
+  margin-top: 50px;
+  margin-left: 220px;
+  text-align: center;
+  width: 70%;
+  height: 70vh;
+  border: 1px solid #c6ec6b;
+  border-radius: 10px 16px;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: "Goldman", cursive;
+  color: #c6ec6b;
+  text-align: center;
+}
+
+.game {
+  width: 600px;
+  height: 200px;
+  border-bottom: 1px solid brown;
+  margin: auto;
+  background-image: url(./img/bg.jpg);
+  /*  position: relative;
+  bottom: 15px; */
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -600px 0px;
+  }
+}
+
+#dino {
+  width: 50px;
+  height: 55px;
+  background-image: url(img/dinosaur.png);
+  background-size: 50px 55px;
+  position: relative;
+  top: 150px;
+  left: 30px;
+}
+
+#cactus {
+  width: 27px;
+  height: 37px;
+  background-image: url(img/cactus.png);
+  background-size: 28px 37px;
+  position: relative;
+  top: 109px;
+  left: 575px;
+}
+
+.movement {
+  animation: cactusMove 1.6s infinite linear;
+}
+.movement2 {
+  animation: animatedBackground 5s linear infinite;
+}
+
+@keyframes cactusMove {
+  0% {
+    left: 575px;
+  }
+  100% {
+    left: -5px;
+  }
+}
+
+.jump {
+  animation: jump 0.32s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 140px;
+  }
+  30% {
+    top: 110px;
+  }
+  50% {
+    top: 90px;
+  }
+  80% {
+    top: 110px;
+  }
+  100% {
+    top: 140px;
+  }
+}
+
+.menu {
+  text-align: center;
+}
+.side-menu img {
+  width: 50px;
+  height: 50px;
+}
+h3 img {
+  position: relative;
+  top: 12px;
+}
+
+.side-menu p {
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  color: #ffffff;
+  font-size: 23px;
+  letter-spacing: 1px;
+  position: relative;
+  bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.side-menu p span:hover {
+  color: #c6ec6b;
+  cursor: pointer;
+}
+
+h3 {
+  word-spacing: 5px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  color: #ffffff;
+  font-size: 2.4em;
+  position: relative;
+  bottom: 30px;
+}
+
+.button-start {
+  text-align: center;
+  position: relative;
+  top: 50px;
+  right: 10px;
+  border: none;
+}
+
+.btn {
+  font-size: 1.6em;
+  font-weight: 7;
+  font-family: "Teko", sans-serif;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px 3px;
+  background-color: black;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  bottom: 10px;
+  border: 1px #c6ec6b solid;
+}
+.btn:hover {
+  color: #c6ec6b;
+}
